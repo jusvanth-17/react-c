@@ -8,14 +8,15 @@ import './App.css';
 // import Destructure from './component/destructure';
 // import Counter from './component/counte  r';
 import { useState } from 'react';
-import Form from './component/form';
-import {Moneyconversion} from './component/moneyconversion';
+import Calculator from './component/Calculator';
+// import Form from './component/form';
+// import {Moneyconversion} from './component/moneyconversion';
 function App() {
   
   return (
     <div className="App">
-      <Moneyconversion/>
-    </div>
+      <Calculator/>
+     </div>
   );
 }
 
