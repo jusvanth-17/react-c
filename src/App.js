@@ -6,14 +6,15 @@ import './App.css';
 // import Props from './component/Props';
 // import Problem from './component/Problem';
 // import Destructure from './component/destructure';
-// import Counter from './component/counter';
+// import Counter from './component/counte  r';
 import { useState } from 'react';
 import Form from './component/form';
+import {Moneyconversion} from './component/moneyconversion';
 function App() {
   
   return (
     <div className="App">
-        <Form/>
+      <Moneyconversion/>
     </div>
   );
 }
