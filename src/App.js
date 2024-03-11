@@ -7,15 +7,20 @@ import './App.css';
 // import Problem from './component/Problem';
 // import Destructure from './component/destructure';
 // import Counter from './component/counte  r';
-import { useState } from 'react';
-import Calculator from './component/Calculator';
+// import LifeCycle from './component/if-else';
+// import Calculator from './component/Calculator';
 // import Form from './component/form';
 // import {Moneyconversion} from './component/moneyconversion';
+import Methodprops from './component/methodprops';
+import { CRUD } from './component/CRUD';
 function App() {
-  
+  // function handleclick(name){
+  //   console.log("Button is clicked from child"+name);
+  // }
   return (
-    <div className="App">
-      <Calculator/>
+    <div className="App"> 
+       {/* <Methodprops handle={handleclick}/> */}
+       <CRUD/>  
      </div>
   );
 }
