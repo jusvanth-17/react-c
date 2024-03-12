@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react'
 
-function HI(){
-    return <h1>Hello from about</h1>
+export const About = () => {
+  return (
+    <div>about</div>
+  )
 }
-export default HI;
