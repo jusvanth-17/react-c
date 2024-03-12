@@ -21,6 +21,11 @@ import { Navbar } from './component/Navbar';
 import { Products } from './component/Products';
 import { Userpage } from './component/Userpage';
 import { Services } from './component/Services';
+import { Nomatch } from './component/Nomatch';
+import { MostViewed } from './component/MostViewed';
+import { Newnew } from './component/Newnew';
+import { Users } from './component/Users';
+import { UserDet } from './component/UserDet';
 
 function App() {
   // function handleclick(name){
@@ -34,9 +39,17 @@ function App() {
        <Routes>
          <Route path='/' element={<Home/>}/>
          <Route path='/about' element={<About/>}/>
-         <Route path='/products' element={<Products/>}/>
+         <Route path='/products' element={<Products/>}>
+            <Route index element={<MostViewed/>}/>
+           <Route path='mostviewed' element={<MostViewed/>}/>
+           <Route path='new' element={<Newnew/>}/>
+         </Route>
          <Route path='/users' element={<Userpage/>}/>
          <Route path='/services' element={<Services/>}/>
+         <Route path='*' element={<Nomatch/>}/>
+         <Route path='/users' element={<Users/>}>
+          <Route path=':userid' element={<UserDet/>}/>
+         </Route>
       
        </Routes>
      </div>
