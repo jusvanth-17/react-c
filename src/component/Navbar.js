@@ -10,6 +10,9 @@ export const Navbar = () => {
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/products">Products</NavLink>
           <NavLink to="/users">Users</NavLink>
+          {!auth && <NavLink to="/login">Login</NavLink>}
+          {!auth && <NavLink to="/signup">SignUp</NavLink>}
+
         </nav>
   </div>
   )

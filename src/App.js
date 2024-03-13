@@ -40,16 +40,16 @@ function App() {
          <Route path='/' element={<Home/>}/>
          <Route path='/about' element={<About/>}/>
          <Route path='/products' element={<Products/>}>
-            <Route index element={<MostViewed/>}/>
-           <Route path='mostviewed' element={<MostViewed/>}/>
-           <Route path='new' element={<Newnew/>}/>
+             <Route index element={<MostViewed/>}/>
+             <Route path='mostviewed' element={<MostViewed/>}/>
+             <Route path='new' element={<Newnew/>}/>
          </Route>
          <Route path='/users' element={<Userpage/>}/>
          <Route path='/services' element={<Services/>}/>
          <Route path='*' element={<Nomatch/>}/>
          <Route path='/users' element={<Users/>}>
-          <Route path=':userid' element={<UserDet/>}/>
-         </Route>
+           <Route path=':userid' element={<UserDet/>}/>
+         </Route> 
       
        </Routes>
      </div>
